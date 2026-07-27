@@ -849,6 +849,9 @@ _test_mkfs()
     9p)
 	# do nothing for 9p
 	;;
+    zerofs)
+	# do nothing for zerofs
+	;;
     fuse)
 	# do nothing for fuse
 	;;
@@ -903,6 +906,9 @@ _try_mkfs_dev()
 	;;
     9p)
 	# do nothing for 9p
+	;;
+    zerofs)
+	# do nothing for zerofs
 	;;
     fuse)
 	# do nothing for fuse
@@ -3654,6 +3660,9 @@ _check_test_fs()
     9p)
 	# no way to check consistency for 9p
 	;;
+    zerofs)
+	# no way to check consistency for zerofs
+	;;
     fuse)
 	# no way to check consistency for fuse
 	;;
@@ -3715,6 +3724,9 @@ _check_scratch_fs()
 	;;
     9p)
 	# no way to check consistency for 9p
+	;;
+    zerofs)
+	# no way to check consistency for zerofs
 	;;
     fuse)
 	# no way to check consistency for fuse
