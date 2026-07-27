@@ -345,6 +345,9 @@ _common_mount_opts()
 	9p)
 		echo $PLAN9_MOUNT_OPTIONS
 		;;
+	zerofs)
+		echo $ZEROFS_MOUNT_OPTIONS
+		;;
 	fuse)
 		echo $FUSE_MOUNT_OPTIONS
 		;;
@@ -519,6 +522,8 @@ _source_specific_fs()
 	cifs)
 		;;
 	9p)
+		;;
+	zerofs)
 		;;
 	fuse)
 		;;
